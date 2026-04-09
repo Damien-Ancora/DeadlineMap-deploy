@@ -37,7 +37,7 @@ class Deadline(models.Model):
         db_table = 'deadline'
         constraints = [
             models.CheckConstraint(
-                check=(
+                condition=(
                     (models.Q(user__isnull=False) & models.Q(group__isnull=True))
                     | (models.Q(user__isnull=True) & models.Q(group__isnull=False))
                 ),
