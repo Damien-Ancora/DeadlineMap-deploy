@@ -1,0 +1,30 @@
+# Environnement virtuel
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Django
+*.sqlite3
+.env
+*.env
+local_settings.py
+staticfiles/
+media/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Environment Variables
+.env
+

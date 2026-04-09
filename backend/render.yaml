@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: deadlinemap-backend
+    runtime: python
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: gunicorn project_config.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0

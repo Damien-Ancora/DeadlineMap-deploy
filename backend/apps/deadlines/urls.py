@@ -1,0 +1,7 @@
+from rest_framework.routers import DefaultRouter
+from .views import DeadlineViewSet
+
+router = DefaultRouter()
+router.register(r'deadlines', DeadlineViewSet, basename='deadline')
+
+urlpatterns = router.urls
