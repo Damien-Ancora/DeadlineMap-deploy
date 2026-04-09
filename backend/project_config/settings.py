@@ -163,7 +163,10 @@ AUTHENTICATION_BACKENDS = [
 # CORS — allow React dev server + Netlify
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
-    'https://ton-app.netlify.app',
+]
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r'^https://.*\.netlify\.app$',
 ]
 
 # Django REST Framework
